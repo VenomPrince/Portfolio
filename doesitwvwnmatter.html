@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Portfolio</title>
+    <link rel="stylesheet" href="less.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div>
+                <h1 class="main-name">PRINCE KHAND<br/> THAKURI</h1>
+                <p class="subtitle">Electronics Engineer</p>
+            </div>
+            <nav class="nav">
+                <button class="nav-btn active" data-section="about">ABOUT</button>
+                <button class="nav-btn" data-section="skills">SKILLS</button>
+                <button class="nav-btn" data-section="projects">PROJECTS</button>
+                <button class="nav-btn" data-section="contact">CONTACT</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container main-content">
+        <!-- About Section -->
+        <section id="about" class="section active">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title-large float-animate">Building the<br/>Future of<br/>Electronics</h2>
+                    <style>
+                    .float-animate {
+                        display: inline-block;
+                        animation: floatXY 10s ease-in-out infinite alternate;
+                    }
+                    @keyframes floatXY {
+                        0% { transform: translate(0px, 0px); }
+                        20% { transform: translate(-3px, 2px); }
+                        40% { transform: translate(2px, -4px); }
+                        60% { transform: translate(-2px, 3px); }
+                        80% { transform: translate(3px, -2px); }
+                        100% { transform: translate(0px, 0px); }
+                    }
+                    </style>
+                    <div class="title-line"></div>
+                    <p class="about-para">
+                        I am a electronics engineer sudtend specializing in embedded systems, circuit design, and IoT solutions. 
+                        With expertise in both analog and digital domains, I transform concepts into functional hardware.
+                    </p>
+                    <p class="about-para">
+                        Experienced in full product development lifecycle from schematic design to production, 
+                        with a strong focus on efficiency, reliability, and innovation.
+                    </p>
+                </div>
+                
+                <!-- Background Photo -->
+                <div class="photo-container">
+                    <img id="profileImage" src="helloimghehe.png" alt="Profile" class="profile-image">
+                    <div id="imagePlaceholder" class="image-placeholder">
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                        <rect x="9" y="9" width="6" height="6"></rect>
+                        <line x1="9" y1="1" x2="9" y2="4"></line>
+                        <line x1="15" y1="1" x2="15" y2="4"></line>
+                        <line x1="9" y1="20" x2="9" y2="23"></line>
+                        <line x1="15" y1="20" x2="15" y2="23"></line>
+                        <line x1="20" y1="9" x2="23" y2="9"></line>
+                        <line x1="20" y1="14" x2="23" y2="14"></line>
+                        <line x1="1" y1="9" x2="4" y2="9"></line>
+                        <line x1="1" y1="14" x2="4" y2="14"></line>
+                    </svg>
+                    <h3>Circuit Design</h3>
+                    <p class="feature-desc">Analog & Digital</p>
+                </div>
+                <div class="feature-card">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <h3>Embedded Systems</h3>
+                    <p class="feature-desc">Firmware & RTOS</p>
+                </div>
+                <div class="feature-card">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="2"></circle>
+                        <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>
+                    </svg>
+                    <h3>RF & Wireless</h3>
+                    <p class="feature-desc">Communication Systems</p>
+                </div>
+                <div class="feature-card">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <h3>Power Electronics</h3>
+                    <p class="feature-desc">SMPS & Converters</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div id="skillsContainer" class="skills-grid"></div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div id="projectsContainer" class="projects-list"></div>
+            <div class="projects-footer">
+                <p class="projects-note"></p>
+				<a href="https://www.github.com/VenomPrince" >
+    <button class="btn-primary">VIEW GITHUB PROJECTS</button>
+  </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title shine-text">Get In Touch</h2>
+            <style>
+            .shine-text {
+                position: relative;
+                display: inline-block;
+                background: linear-gradient(90deg, #ffffff 0%, #000000 50%, #fcfcfc 100%);
+                background-size: 200% auto;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                -webkit-text-fill-color: transparent;
+                animation: shine 2s cubic-bezier(0.4,0,0.2,1) infinite;
+                animation-play-state: paused;
+            }
+            @keyframes shine {
+                0% { background-position: 200% 0; }
+                100% { background-position: 0 0; }
+            }
+            </style>
+            <script>
+            function triggerShine() {
+                const el = document.querySelector('.shine-text');
+                if (!el) return;
+                el.style.animationPlayState = 'running';
+                setTimeout(() => {
+                el.style.animationPlayState = 'paused';
+                }, 2000); // match animation duration
+            }
+            setInterval(() => {
+                triggerShine();
+            }, 4000);
+            </script>
+            <div class="contact-grid">
+                <div>
+                    <p class="contact-intro">
+                        Interested in learning more about me? Let's connect and explore how I can add value to your team and projects.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:princekhand09@gmail.com" class="contact-link">
+                            <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>Email Me</span>
+                        </a>
+                        <a href="https://fi.linkedin.com/in/prince-khand-thakuri-b85443265" class="contact-link">
+                            <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>linkedin</span>
+                        </a>
+                        <a href="https://github.com/VenomPrince" class="contact-link">
+                            <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            <span>Github</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <h3 class="contact-box-title">Connect With Me</h3>
+                    <div class="contact-box-content">
+                        <p class="contact-box-text">
+                            Feel free to reach out through any platform above, or download my resume below. Even a small message such as "Hi" is totally welcome, let me know how your day is going!
+                        </p>
+						<div style="text-align: center; margin-top: 1rem;">
+  <a href="https://raw.githubusercontent.com/VenomPrince/CV/blob/main/Khand_Thakuri_Prince_CV.pdf" download target="_blank" rel="noopener noreferrer">
+    <button class="btn-primary">DOWNLOAD RESUME</button>
+  </a>
+</div>
+                        <button class="btn-secondary">VIEW CERTIFICATIONS</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p></p>
+        </div>
+    </footer>
+
+    <script src="magicsv.js"></script>
+</body>
+</html>
