@@ -326,6 +326,15 @@ body::before {
     z-index: -1;
 }
 
+.skillbg,
+.skillbgtwo {
+  background-image: url('./assets/skillbg.png'); /* <- update to actual path/filename */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 240px; /* ensures it is visible */
+}
+
 /* Projects Section */
 .projects-list {
     margin-bottom: 3rem;

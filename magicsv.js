@@ -1,72 +1,74 @@
-// Skills Data
+// Skills Data (Real & Verified)
 const skills = {
-    'Circuit Design': [
-        'Analog Circuit Design',
-        'PCB Design & Layout',
-        'Digital Circuit Design',
+    'Electronics & Circuit Design': [
+        'Analog Circuit Analysis',
+        'Digital Logic Circuits',
+        'Discrete Component Design',
         'Schematic Capture',
-        'Signal Integrity Analysis'
+        'Basic PCB Design (KiCad)',
+        'NTC & Sensor Circuits'
     ],
-    'Programming': [
-        'C/C++',
-        'SCPI',
-        'Python',
-        'VHDL/Verilog',
-        'MATLAB',
+
+    'Programming & Scripting': [
+        'C',
         'Embedded C',
-        'Assembly'
+        'Arduino Framework',
+        'Python (Basic)',
+        'SCPI Commands',
+        'MATLAB (Basic)'
     ],
-    'Microcontrollers': [
-        'ARM Cortex',
-        'AVR',
-        'PIC',
+
+    'Microcontrollers & Platforms': [
+        'AVR (ATmega328PB)',
         'ESP32',
-        'Arduino',
-        'Raspberry Pi'
+        'Arduino MKR WiFi 1010',
+        'Raspberry Pi 3',
+        'Bare-Metal Microcontroller Basics'
     ],
-    'Tools & Software': [
+
+    'Tools & Development Software': [
         'LabVIEW',
-        'TestStand',
-        'Altium Designer',
-        'VS Code',
-        'Eagle',
+        'NI TestStand',
         'KiCad',
-        'LTSpice',
-        'Cadence',
-        'OrCAD',
-        'Vivado',
-        'Quartus'
+        'LTspice',
+        'VS Code',
+        'WinSCP',
+        'Git (Basic)'
     ],
-    'Testing & Analysis': [
+
+    'Testing & Measurement': [
         'Oscilloscope',
         'Logic Analyzer',
-        'Spectrum Analyzer',
         'Multimeter',
-        'Signal Generators'
+        'Signal Generator',
+        'Automated Test Systems',
+        'Measurement Documentation'
     ],
-    'Communication': [
+
+    'Communication & Interfaces': [
         'UART',
         'SPI',
         'I2C',
-        'CAN',
-        'Ethernet',
-        'WiFi',
-        'Bluetooth',
-        'RF Design'
+        'USB (Basic)',
+        'WiFi (ESP32 / Arduino)',
+        'SSH / SCP'
     ],
-    'Power Electronics': [
-        'SMPS Design',
-        'Battery Management',
-        'DC-DC Converters',
-        'AC-DC Converters',
-        'Motor Drivers'
+
+    'Power & Installations': [
+        'AC Wiring (Supervised)',
+        '3-Phase Systems (Basic)',
+        'EV Charger Installation Assistance',
+        'Solar Panel System Assistance',
+        'Electrical Safety (SFS 6002)'
     ],
-    'Embedded Systems': [
-        'RTOS',
-        'Linux Embedded',
-        'Bootloader Development',
-        'Device Drivers',
-        'IoT Systems'
+
+    'Embedded & System Skills': [
+        'Embedded Linux (Raspberry Pi)',
+        'GPIO Control',
+        'Sensor Integration',
+        'Fan & Thermal Control',
+        'System Debugging',
+        'Lab-Based Development'
     ]
 };
 
@@ -165,17 +167,17 @@ document.addEventListener('DOMContentLoaded', function () {
 // Load Skills
 function loadSkills() {
     const premiumSkills = new Set([
-        'PCB Design & Layout',
-        'Python',
-        'C/C++',
-        'SCPI',
-        'LabVIEW',
-        'TestStand',
-        'ARM Cortex',
-        'Analog Circuit Design',
-        'AVR',
-        'Altium Designer',
-        'RTOS'
+    'LabVIEW',
+        'NI TestStand',
+        'SCPI Commands',
+        'Embedded C',
+        'AVR (ATmega328PB)',
+        'ESP32',
+        'Raspberry Pi 3',
+        'Automated Test Systems',
+        'Oscilloscope',
+        'Embedded Linux (Raspberry Pi)',
+        'Electrical Safety (SFS 6002)'
     ]);
 
     const skillsContainer = document.getElementById('skillsContainer');
