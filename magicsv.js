@@ -11,28 +11,58 @@ const skills = {
 };
 
 // Projects Data
+// Projects Data
 const projects = [
     {
-        title: 'Smart IoT Energy Monitor',
-        desc: 'Developed a real-time energy monitoring system using ESP32 with cloud integration',
-        tech: ['ESP32', 'MQTT', 'PCB Design', 'Power Monitoring IC']
+        title: 'Automated RIAA Amplifier Test System (Bachelor’s Thesis)',
+        desc: 'Designed an automated test environment for RIAA amplifiers using SCPI-controlled instruments, LabVIEW, and TestStand. The system performs repeatable measurements, logs results, and validates amplifier performance without manual intervention.',
+        tech: [
+            'LabVIEW',
+            'TestStand',
+            'SCPI',
+            'Oscilloscope & Power Supply Control',
+            'Automated Measurement',
+            'Electronics Testing'
+        ]
     },
     {
-        title: 'BLDC Motor Controller',
-        desc: 'Designed and implemented a high-efficiency brushless DC motor controller',
-        tech: ['STM32', 'Power MOSFETs', 'FOC Algorithm', 'PCB Layout']
+        title: 'ESP32-Based Washing Machine Monitoring System',
+        desc: 'Developed an embedded system to detect washing machine operating states using vibration sensing. Implemented a dual-MCU architecture where an ATmega328PB handles sensor logic and an Arduino MKR WiFi 1010 provides web interface and notifications.',
+        tech: [
+            'ESP32 / Arduino MKR WiFi 1010',
+            'ATmega328PB',
+            'Vibration Sensors',
+            'UART Communication',
+            'Embedded C / Arduino',
+            'IoT Monitoring'
+        ]
     },
     {
-        title: 'RF Communication Module',
-        desc: 'Created a long-range RF transceiver module for industrial applications',
-        tech: ['LoRa', 'Antenna Design', 'RF Testing', 'FCC Compliance']
+        title: 'EV Charger & Solar Installation Projects',
+        desc: 'Participated in real-world electrical installations including EV chargers, solar panel systems, and three-phase wiring. Performed cable routing, protection devices installation, and safety-compliant commissioning under Finnish electrical standards.',
+        tech: [
+            'EV Chargers',
+            'Solar Panel Systems',
+            '3-Phase Power',
+            'Electrical Safety (SFS 6002)',
+            'AC Wiring',
+            'Field Installation'
+        ]
     },
-	{
-        title: 'Digital Clock',
-        desc: 'Created a Complete Digital Clock from Scratch with logic gates for campus project.',
-        tech: ['Logic Gates', 'ICs', 'Multisim', 'KiCad']
+    {
+        title: 'Embedded Systems & Hardware Prototyping Labs',
+        desc: 'Completed multiple embedded systems and electronics laboratory projects involving microcontrollers, PCB design, signal measurement, and fault analysis. Focused on practical debugging and measurement-driven validation.',
+        tech: [
+            'ESP32',
+            'STM32 / AVR',
+            'PCB Design (KiCad)',
+            'Oscilloscope & Logic Analyzer',
+            'EMC & Signal Integrity',
+            'Hardware Debugging'
+        ]
     }
 ];
+
 
 // Navigation functionality
 document.addEventListener('DOMContentLoaded', function() {
