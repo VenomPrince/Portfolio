@@ -88,32 +88,22 @@ const projects = [
         ]
     },
     {
-        title: 'RetroPie Arcade System with Custom Thermal Control',
-        desc: 'Built a complete RetroPie arcade system during an internship at Metropolia UAS using a Raspberry Pi 3. Implemented a discrete-component temperature control circuit (NTC + transistor) for automatic fan cooling and designed fully 3D-printed arcade controllers for multiplayer gameplay.',
-        tech: [
-            'Raspberry Pi 3',
-            'RetroPie (Linux)',
-            'WinSCP / SSH',
-            '10k NTC Thermistor',
-            'TIP41C Transistor',
-            'Analog Temperature Control',
-            'Cooling Fan Control',
-            '3D Printing',
-            'Arcade Controllers'
-        ]
-    },
-    {
-        title: 'ESP32-Based Washing Machine Monitoring System',
-        desc: 'Developed an embedded system to detect washing machine operating states using vibration sensing. Implemented a dual-MCU architecture where an ATmega328PB handles sensor logic and an Arduino MKR WiFi 1010 provides a web interface and notifications.',
-        tech: [
-            'ESP32 / Arduino MKR WiFi 1010',
-            'ATmega328PB',
-            'Vibration Sensors',
-            'UART Communication',
-            'Embedded C / Arduino',
-            'IoT Monitoring'
-        ]
-    },
+    title: 'RetroPie Arcade System with Custom Thermal Control',
+    desc: 'Built a complete RetroPie arcade system during an internship at Metropolia UAS using a Raspberry Pi 3. Implemented a discrete-component temperature control circuit (NTC + transistor) for automatic fan cooling and designed fully 3D-printed arcade controllers for multiplayer gameplay.',
+    tech: [
+        'Raspberry Pi 3',
+        'RetroPie (Linux)',
+        'WinSCP / SSH',
+        '10k NTC Thermistor',
+        'TIP41C Transistor',
+        'Analog Temperature Control',
+        'Cooling Fan Control',
+        '3D Printing',
+        'Arcade Controllers'
+    ],
+    githubLink: 'https://github.com/VenomPrince/Retropie-journey'
+},
+
     {
         title: 'EV Charger & Solar Installation Projects',
         desc: 'Participated in real-world electrical installations including EV chargers, solar panel systems, and three-phase wiring. Performed cable routing, protection device installation, and safety-compliant commissioning under Finnish electrical standards.',

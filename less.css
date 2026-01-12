@@ -156,6 +156,62 @@ body::before {
     margin-bottom: 1.5rem;
 }
 
+/* The container needs relative positioning and hidden overflow to clip the beam */
+.glow-card {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: #111; /* Match this to your card background */
+}
+
+/* This is the rotating neon beam */
+.glow-card::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    /* NEON COLORS: Adjust these to your branding */
+    background-image: conic-gradient(transparent, #00d2ff, #3a7bd5, transparent 30%);
+    animation: rotate-border 4s linear infinite;
+}
+
+/* This covers the center of the card so only the edge glows */
+.glow-card::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 2px;  /* This controls the border thickness */
+    top: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background: #1a1a1a; /* Match your website's card background exactly */
+    border-radius: inherit;
+}
+
+/* The Rotation Animation */
+@keyframes rotate-border {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+/* Optional: Subtle glow on the whole box */
+.glow-card {
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.glow-card:hover {
+    box-shadow: 0 0 25px rgba(0, 210, 255, 0.3);
+}
+
 /* === Image Container === */
 .photo-container {
     position: absolute;
