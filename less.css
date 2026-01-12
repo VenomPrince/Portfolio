@@ -172,25 +172,31 @@ body::before {
 
 }
 
-/* Image Base Style */
 .profile-image {
     height: 20rem; 
     width: auto;
-	margin-top: 2rem;
+    margin-top: 6rem;
     object-fit: contain;
-    transform: scale(1.8) translateX(-90px) scaleX(1); 
-	filter: brightness(0.9) contrast(1.0); 
-    transition: transform 0.4s ease, filter 0.4s ease;
-   
+    
+    /* Position and Scale */
+    transform: scale(1.8) translateX(-70px); 
+    
+    /* Professional Tone */
+    filter: brightness(0.9) contrast(1.1); 
+    transition: transform 0.2s ease, filter 0.2s ease;
     will-change: transform, filter;
-}
 
+    /* BLENDING ON ALL SIDES */
+    /* This creates a soft oval mask that fades to transparent at the edges */
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 85%);
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 85%);
+}
 /* === Hover Effects === */
 .photo-container:hover .profile-image {
-    transform: scale(2.0) translateX(-60px) scaleX(-1); 
+    transform: scale(2.0) translateX(-60px) scaleX(1); 
   
     
-    filter: brightness(1.2) contrast(0.9); /*  Slight visual enhancement */
+    filter: brightness(1.1) contrast(1.1); /*  Slight visual enhancement */
 }
 
 .image-placeholder {
